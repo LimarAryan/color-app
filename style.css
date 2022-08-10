@@ -1,0 +1,12 @@
+*{
+    background-color: rgb(89, 80, 206);
+}
+
+#colorButton {
+    color:red
+}
+#box {
+    height: 100px;
+    width: 100px;
+    color:yellow;
+}
