@@ -10,36 +10,45 @@
 
 
     <body>
+
+        <!--div to create color box and for drop down menu-->
         <div id="box"></div>
         <select onchange="changeBackground(this)">
             <option value ="red">Red</option>
             <option value = "blue">Blue</option>
             <option value = "green">Green</option>
         </select>
+        <!--end div-->
+
 
         <!--line breaks-->
         <br>
         <br>
         <!--end line breaks-->
 
-        <p>Try typing "yellow"</p>
+            <!--text input box-->
+            <input type="text" id="colorInputText">
+            <input type="button" id = "colorButton" value="Click to change color" onclick = "changeColor()">
+           
+            <p>Try typing "yellow"</p>
+            <p>You can type rgb or hexadecimals too</p>
+            <!--end text input box-->
         
-        
-        <input type="text" id="colorInputText">
-        <input type="button" id = "colorButton" value="Click to change color" onclick = "changeColor()">
-
-        <p>You can type rgb or hexadecimals too</p>
-        
+        <!--line breaks-->
         <br>
         <br>
+        <!--end line breaks-->
 
+
+        <!--color value selector-->
         <input type="color" id="colorInputColor">
         <input type="button" value="Click to change Color" onclick = changeColor2()>
-
+        <!--end color value selector-->
         
+        <br>
+        <a href = https://limararyan.github.io>Back to main</a>
 
-        
-
+        <!--javascript-->
         <script>
             function changeColor(){
                 let color = document.getElementById("colorInputText").value;
